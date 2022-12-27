@@ -5,12 +5,10 @@
  * @info: struct address
  * Return: 1 if interactive mode, 0 otherwise
  */
-
 int interactive(info_t *info)
 {
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
-
 /**
  * is_delim - checks if character is a delimeter
  * @c: the char to check
@@ -37,9 +35,9 @@ int is_delim(char c, char *delim)
 int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-	    return (1);
+		return (1);
 	else
-	    return (0);
+		return (0);
 }
 
 /**
